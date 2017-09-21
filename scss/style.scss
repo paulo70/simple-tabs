@@ -1,35 +1,7 @@
-$underline: none;
-$font: 'arial';
-$sizeNormal:0.938em;
-
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  -ms-border-radius: $radius;
-  border-radius: $radius;
-}
-
-@mixin border-sides($topleft, $topright, $bottomright, $bottomleft) {
-  border-top-left-radius: $topleft;
-  border-top-right-radius: $topright;
-  border-bottom-right-radius: $bottomright;
-  border-bottom-left-radius: $bottomleft;
-  -webkit-border-top-left-radius: $topleft;
-  -webkit-border-top-right-radius: $topright;
-  -webkit-border-bottom-right-radius: $bottomright;
-  -webkit-border-bottom-left-radius: $bottomleft;
-  -moz-border-radius-topleft: $topleft;
-  -moz-border-radius-topright: $topright;
-  -moz-border-radius-bottomright: $bottomright;
-  -moz-border-radius-bottomleft: $bottomleft;
-}
-
-@mixin border-size($border){
-	border:$border;
-}
+@import 'mixin';
 
 .wrapper {
-  width: 100%
+  width: 100%;
 }
 
 .hide {
@@ -45,16 +17,14 @@ $sizeNormal:0.938em;
 }
 
 .content-links {
-	width:50%;
+  padding:0.500em 0em 0.500em;
   a {
     background:#84dcec;
-    display: inline-block;
     text-decoration: $underline;
     font-family: $font;
     font-size: $sizeNormal;
     @include border-sides(0.500em, 0.500em, 0em, 0em);
-    padding: 0.625em 4.286em;
-    width: 10%;
+    padding: 0.625em 6.180em;
     color: #fff;
     &:hover{
     	background:#93e2f1;
@@ -66,7 +36,7 @@ $sizeNormal:0.938em;
 	@include border-size(0.143em solid #c1bbbb);
 	@include border-sides(0em, 0em, 0.500em, 0.500em)
 	padding: 0.500em 0.438em;
-    width: 45%;
+    width: 50%;
 	p{
 		font-family: $font;
 	}

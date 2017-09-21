@@ -1,24 +1,33 @@
 {
-  "name": "tabs",
+  "name": "simple-tabs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulo70/simple-tabs.git"
+  },
+  "author": "paulrocker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulo70/simple-tabs/issues"
+  },
+  "homepage": "https://github.com/paulo70/simple-tabs#readme",
+  "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^7.3.0",
-    "gulp": "^3.9.1"
-  },
-  "devDependencies": {
     "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-jshint": "^2.0.4",
+    "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "jshint": "^2.9.5",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "paulrocker",
-  "license": "ISC"
+  }
 }
